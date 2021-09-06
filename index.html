@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="to-do-list-container">
+      <div class="input-container">
+        <input
+          type="text"
+          id="to-do-list-input"
+          placeholder="Put something on your to-do list"
+        />
+        <button class="add-to-list"><i class="fas fa-plus"></i></button>
+      </div>
+      <ul class="to-do-list">
+        <li class="list-item">
+          Finish homework
+          <button class="remove-item"><i class="fas fa-ban"></i></button>
+        </li>
+        <li class="list-item">
+          Learn Javascript
+          <button class="remove-item"><i class="fas fa-ban"></i></button>
+        </li>
+        <li class="list-item">
+          Learn frontend libraries
+          <button class="remove-item"><i class="fas fa-ban"></i></button>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
