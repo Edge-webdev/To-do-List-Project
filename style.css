@@ -64,3 +64,16 @@ body {
   margin: -11px;
   cursor: pointer;
 }
+
+.check-item {
+  color: #1bc900;
+  border: 2px #1bc900 solid;
+  box-sizing: content-box;
+  background-color: white;
+  height: 35px;
+  width: 12%;
+  margin: -11px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 11px;
+}
