@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -8,9 +10,57 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .to-do-list-container {
   border: 2px black solid;
   padding: 20px 40px;
+  width: 30%;
+  height: 40%;
+}
+
+#to-do-list-input {
+  font-size: 14px;
+  height: 30px;
+  width: 85%;
+}
+
+.add-to-list {
+  color: #1bc900;
+  border: 1px #1bc900 solid;
+  border-radius: 2px;
+  background-color: white;
+  height: 30px;
+  width: 12%;
+  cursor: pointer;
+}
+
+.add-to-list:active {
+  color: #18b800;
+  border: 1px #18b800 solid;
+}
+
+.to-do-list {
+  padding: 0;
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.remove-item {
+  color: #ed0000;
+  border: 2px #ed0000 solid;
+  box-sizing: content-box;
+  background-color: white;
+  height: 35px;
+  width: 12%;
+  margin: -11px;
 }
