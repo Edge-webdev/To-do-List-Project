@@ -19,22 +19,11 @@
           id="to-do-list-input"
           placeholder="Put something on your to-do list"
         />
-        <button class="add-to-list"><i class="fas fa-plus fa-lg"></i></button>
+        <button class="add-to-list" onclick="addToList()">
+          <i class="fas fa-plus fa-lg"></i>
+        </button>
       </div>
-      <ul class="to-do-list">
-        <li class="list-item">
-          Finish homework
-          <button class="remove-item"><i class="fas fa-ban fa-lg"></i></button>
-        </li>
-        <li class="list-item">
-          Learn Javascript
-          <button class="remove-item"><i class="fas fa-ban fa-lg"></i></button>
-        </li>
-        <li class="list-item">
-          Learn frontend libraries
-          <button class="remove-item"><i class="fas fa-ban fa-lg"></i></button>
-        </li>
-      </ul>
+      <ul class="to-do-list"></ul>
     </div>
     <script src="script.js"></script>
   </body>
