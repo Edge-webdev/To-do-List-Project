@@ -8,7 +8,7 @@ function addToList() {
     const li = document.createElement('li');
     li.innerHTML = `
     ${inputValue}
-    <button class="remove-item"><i class="fas fa-ban fa-lg"></i></button>
+    <button class="remove-item" onclick="removeItem(this)"><i class="fas fa-ban fa-lg"></i></button>
     `;
     li.classList.add('list-item');
     toDoList.appendChild(li);
@@ -16,4 +16,8 @@ function addToList() {
   } else {
     alert('You have to input a value into the text area!');
   }
+}
+
+function removeItem(listItem) {
+  listItem.parentNode.parentNode.removeChild(listItem.parentNode);
 }
