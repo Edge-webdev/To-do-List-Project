@@ -3,7 +3,7 @@ const input = document.getElementById('to-do-list-input');
 const add = document.querySelector('.add-to-list');
 
 function addToList() {
-  // Stores the text inside input
+  // Stores the text inside input;
   var inputValue = input.value;
 
   // Checks if input value is not empty
@@ -12,7 +12,7 @@ function addToList() {
     const li = document.createElement('li');
     li.innerHTML = `
     ${inputValue}
-    <button class="check-item">
+    <button class="check-item" onclick="checkItem(this)">
     <i class="fas fa-check"></i>
     </button>
     <button class="remove-item" onclick="removeItem(this)">
@@ -31,4 +31,8 @@ function addToList() {
 function removeItem(listItem) {
   // Looks for the button's grandparent (The list) and removes the parent node of the button
   listItem.parentNode.parentNode.removeChild(listItem.parentNode);
+}
+
+function checkItem(item) {
+  item.parentNode.classList.add('checked');
 }
