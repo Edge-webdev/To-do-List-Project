@@ -20,9 +20,9 @@ function addToList() {
       <i class="fas fa-ban fa-lg"></i>
     </button>
     `;
+    toDoList.removeChild(placeholder);
     li.classList.add('list-item');
     toDoList.appendChild(li);
-    toDoList.removeChild(placeholder);
     // Clear input value
     input.value = '';
   } else {
