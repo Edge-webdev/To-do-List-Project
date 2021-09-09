@@ -1,6 +1,7 @@
 const toDoList = document.querySelector('.to-do-list');
 const input = document.getElementById('to-do-list-input');
 const add = document.querySelector('.add-to-list');
+const placeholder = document.querySelector('.placeholder');
 
 function addToList() {
   // Stores the text inside input;
@@ -21,6 +22,7 @@ function addToList() {
     `;
     li.classList.add('list-item');
     toDoList.appendChild(li);
+    toDoList.removeChild(placeholder);
     // Clear input value
     input.value = '';
   } else {
